@@ -1,0 +1,44 @@
+def loan_amount():
+    desired_amount = int(input('Желаемая сумма кредита: '))
+
+    return desired_amount
+
+
+def check_user_age():
+    user_age = int(input('Ваш возвраст: '))
+
+    min_age = 18
+    max_age = 70
+
+
+    if user_age < min_age:
+        reason = 'Отказ'
+    elif user_age >= max_age:
+        reason = 'Вы старый'
+    else:
+        reason = 'Разрешено'
+
+    print(reason)
+
+    return user_age
+
+
+def desired_percent():
+    what_percent = int(input('Желаемый процент (0-100%): '))
+
+    sixty_years_old = 3
+    thirty_years_old = 2
+
+
+    if check_user_age() <= 30:
+        30 + thirty_years_old
+
+
+
+
+    return what_percent
+
+
+
+
+print(loan_amount(), check_user_age(), desired_percent())
